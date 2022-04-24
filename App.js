@@ -1,9 +1,7 @@
-import React from 'react';
-import ViewImageScreen from './app/screens/ViewImageScreen';
-import WelcomeScreen from './app/screens/WelcomeScreen';
+import React from "react";
 
-export default function App () {
-  return (
-    <ViewImageScreen />
-  )
+import ViewImageScreen from "./app/screens/ViewImageScreen";
+
+export default function App() {
+  return <ViewImageScreen />;
 }
