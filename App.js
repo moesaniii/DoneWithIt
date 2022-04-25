@@ -1,5 +1,13 @@
-import React from "react";
-import ListingScreen from "./app/screens/ListingScreen";
+import React, { useState } from "react";
+import { Text, TextInput } from "react-native";
+import AppTextInput from "./app/components/AppTextInput";
+import Screen from "./app/components/Screen";
+
 export default function App() {
-  return <ListingScreen />;
+  const [firstName, setFirstName] = useState("");
+  return (
+    <Screen>
+      <AppTextInput placeholder="Username" icon="email" />
+    </Screen>
+  );
 }
